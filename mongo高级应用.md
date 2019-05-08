@@ -9,5 +9,22 @@
   ])
   ```
 
+* mongo创建用户
+
+* ```javascript
+  db.createUser(
+      {
+          user:'local_attach',
+          pwd: 'local_attach_439765',
+          roles: [
+              {
+                  role: 'readWrite',
+               	db: 'local_attach'
+              }
+          ]
+      }
+  )
+  ```
+
   
 
